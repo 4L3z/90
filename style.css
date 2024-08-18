@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+    cursor: url(cursors/wii-grab.cur), auto;
+}
+
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo{
+    margin-left: 30px;
+    display: block;
+}
+
+
+.logo a img{
+    width: 200px;
+    height: 100px;
+    transition: opacity 0.3s ease-in-out;
+    
+
+}
+.logo:hover a img {
+    content: url(img/8bit.png);
+    margin-top: 50px;
+    height: 150px;
+    cursor: url(cursors/wii-pointer-ccw.cur), auto;
+}
+
+.navbar a {
+    display: block;
+    padding: 22px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #3a3a3a;
+    color: #e24c07;
+    cursor: url(cursors/wii-pointer-ccw.cur), auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: black;
+   opacity: .8;
+   border: #101010 40px;
+
+}
+
+.header {
+    height: 60vh !important;
+    
+}
+
+.title{
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+
+}
+.title2{
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #f5f5f5;
+}
+
+ p {
+    margin-bottom: 40px;
+    font-size: 25px;
+    color: #ffffff;
+    padding: 0 100px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #e24c07;
+    color: #fff;
+    text-decoration: none;
+    background: #e24c07;
+}
+
+.btn:hover{
+    background: none;
+    color: #e24c07;
+    cursor: url(cursors/wii-pointer-ccw.cur), auto;
+}
+
+.btn-home{
+    display: flex;
+}
+.btn-home a {
+    margin: 0 10px;
+}
+
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sau {
+    padding: 30px;
+
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    background: #101010;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgb(0, 0, 0, .5);
+    margin: 2rem;
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #9c27b0;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #9c27b0;
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+
+}
+
+.box-container .box a:hover{
+    cursor: url(cursors/wii-pointer-ccw.cur), auto;
+}
+
+
+
+
+.contact {
+    padding-top: 20px;
+    background: #171717;
+    padding-top: 0;
+}
+
+.contact a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact a:hover{
+    cursor: url(cursors/wii-pointer-ccw.cur), auto;
+}
+
+@media (max-width: 768px) {
+    .title{
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+}
+
+.sau {
+    height: 120vh;
+}
+
+.icon {
+    background-image: url(img/Spotify.jpg);
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    padding: 20px 20px;
+    background-color: #0e0d0d;
+    border-radius: 30px;
+    opacity: 1;
+
+}
+
+.control-button {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(168, 84, 59);
+}
+
+
+.control-button:hover {
+    background-color: rgba(0, 0, 0, 1);
+    cursor: url(cursors/wii-pointer-ccw.cur), auto;
+}
+
+
+
+.volume-slider {
+    width: 200px;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #271414, #e20303);
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: url(cursors/wii-pointer-ccw.cur), auto;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 5px rgb(168, 84, 59);
+}
+
+.volume-slider::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: url(cursors/wii-pointer-ccw.cur), auto;
+    -webkit-appearance: none;
+    appearance: none;
+    box-shadow: 0 0 5px rgb(239, 239, 240);
+    transition: transform 0.3s ease; 
+}
+
+.volume-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #f70000;
+    cursor: url(cursors/wii-pointer-ccw.cur), auto;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    transition: transform 0.3s ease; 
+}
+
+.volume-slider:hover::-webkit-slider-thumb,
+.volume-slider:hover::-moz-range-thumb {
+    background: #0056b3;
+}
